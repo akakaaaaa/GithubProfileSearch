@@ -1,0 +1,430 @@
+body {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Space Mono", monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #F6F8FF;
+}   
+
+body.dark-body {
+    background-color: #141D2F;
+    color: white;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    font-family: "Space Mono", monospace;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+
+    .main-flex {
+        background-color: transparent;
+    }
+
+    .header-h1 {
+        color: white;
+    }
+
+    .switch-name {
+        color: white;
+    }
+
+    .search-bar {
+        background-color: #1E2A47;
+        box-shadow: none;
+    }
+
+    .profile-info {
+        box-shadow: none;
+        background-color: #1E2A47;
+    }
+
+    .profile-name {
+        columns: white;
+    }
+
+    .repos, .followers, .following, .repo-number, .follower-number, .following-number {
+        color: white;
+    }
+
+    .location-name, .twitter-p, .url-a, .github-p{
+        color: white;
+    }
+
+    .profile-stats {
+        background-color: #141D2F;
+    }
+
+    input[type="text"] {
+        background-color: #1E2A47;
+        color: white;
+    }
+
+    ::placeholder {
+        color: white;
+    }
+
+    .other-info-svg  {
+        fill: white;
+    }
+
+    
+    .header-switch:hover {
+        .switch-name {
+        color: #4B6A9B;
+        }
+        .svg-sun {
+            fill:#4B6A9B;
+        }
+    }
+
+    .svg-moon {
+        display: none;
+    }
+
+    .svg-sun {
+        display: block;
+    }
+}
+
+.svg-sun {
+    display: none;
+    fill: white;
+    transition: fill 0.4s ease;
+}
+
+.other-info-svg {
+    fill:#1E2A47;
+}
+
+.main-flex {
+    height: 65.67%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-div {
+    width: 128px;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center
+
+}
+
+.search-bar-img {
+    height: 20px;
+    width: 20px;
+}
+
+.search-bar-img-container {
+    width: 20px;
+    height: 20px;
+}
+
+.header-switch {
+    width: 89px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.header-h1 {
+    width: 40px;
+    height: 100px;
+    color: #2B3442;
+    margin: 0;
+    font-size: 26px;
+}
+.moon {
+    width: 20px;
+    height: 20px;
+    align-self: center;
+}
+
+.switch-name {
+    width: 40px;
+    height: 19px;
+    margin: 0;
+    text-align: center;
+    color: #697C9A;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: color 0.5s ease;
+}
+
+.svg-moon {
+    fill: #697C9A;
+    transition: fill 0.5s ease;
+}
+
+.header-switch:hover {
+  .switch-name {
+    color: #2B3442;
+  }
+
+  .svg-moon {
+    fill:#2B3442;
+  }
+}
+
+.search-bar {
+    background-color: white;
+    width: 100%;
+    height: 69px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow:  5px 10px 20px  #eaeef9;
+}
+
+form {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    border: none;
+}
+
+input[type=text] {
+    height: 25px;
+    width: 70%;
+    border: none;
+    outline: none;
+    font-family: "Space Mono", monospace;
+    font-size: 15px;
+}
+
+
+
+input[type=submit] {
+    background-color: #0079FF;
+    color: white;
+    padding: 10px 20px;
+    font-family: "Space Mono", monospace;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+}
+
+::placeholder {
+    font-family: "Space Mono", monospace;
+}
+
+input[type=submit]:hover {
+    opacity: 50%;
+}
+
+.profile-info {
+    width: 100%;
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow:  5px 10px 20px  #eaeef9;
+    display: flex;
+    gap: 40px;
+}
+
+.profile-img {
+    height: 80%;
+    align-self: center;
+    width: 117px;
+    margin-left: 50px;
+}
+
+.profile-info-div {
+    flex: 1;
+    display: flex;
+    margin-right: 50px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-info-inner-div1{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.profile-info-inner-div2 {
+    height: 185px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inner-div-1 {
+    display: flex;
+    width: 100%;
+    height: 39px;
+    justify-content: space-between;
+}
+
+
+.profile-name {
+    font-size: 26px;
+    height: 39px;
+    margin: 0;
+}
+
+.date {
+    font-size: 14px;
+    color: #697C9A;
+    height: 39px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-url {
+    font-size: 15px;
+    color: #0079FF;
+}
+
+.bio {
+    color: #697C9A;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #4B6A9B;
+    font-size: 15px;
+}
+
+.profile-stats {
+    width: 100%;
+    height: 85px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #F6F8FF;
+    position: relative;
+}
+
+.repos {
+ font-size: 12px;
+ color: #697C9A;
+}
+
+.repo-number {
+    font-weight: 600;
+}
+
+.followers {
+    font-size: 12px;
+    color: #697C9A;
+}
+
+.follower-number {
+    font-weight: 600;
+}
+
+.following {
+    font-size: 12px;
+    color: #697C9A;
+}
+
+.following-number {
+    font-weight: 600;
+}
+
+.other-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-self: end;
+}
+
+.location-div {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.other-inner-div2 {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.location {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    gap: 10px;
+
+}
+
+.twitter-div {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    gap: 10px;
+
+}
+
+.twitter-p {
+    margin: 0;
+}
+
+.url-div {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    gap: 10px;
+
+}
+
+.github-div {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    gap: 10px;
+
+}
+
+.img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
