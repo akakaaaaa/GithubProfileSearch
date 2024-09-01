@@ -31,19 +31,19 @@
       </div>
       <div class="search-bar">
         <img class="search-img" src="assets/icon-search.svg" alt="">
-        <form action="/post" method="post">
+        <form action="/post" method="post" autocomplete="off">
           <% if(locals.error) {%>
             <style>
               input::placeholder {
-              color: rgb(160, 0, 0);
+              color: rgb(194, 0, 0);
             }
             </style>
             
-            <input  name="username" type="text" placeholder="<%= error %>">   
+            <input  name="username" id="input-text" type="text" placeholder="<%= error %>">   
           <% } else {%>
             <input name="username" type="text" placeholder="Search GitHub username...">   
           <% } %>
-          <input type="submit" value="Search">
+          <input id="input-submit" type="submit" value="Search">
         </form>
       </div>
       <div class="profile-info">

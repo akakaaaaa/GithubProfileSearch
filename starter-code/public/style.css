@@ -63,9 +63,11 @@ body.dark-body {
         color: white;
     }
 
-    ::placeholder {
+    input[type="text"]:focus {
+        background-color: #1E2A47;
         color: white;
     }
+
 
     .other-info-svg  {
         fill: white;
@@ -88,6 +90,8 @@ body.dark-body {
     .svg-sun {
         display: block;
     }
+
+    
 }
 
 .svg-sun {
@@ -106,6 +110,7 @@ body.dark-body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 730px;
 }
 
 .header {
@@ -213,10 +218,9 @@ input[type=text] {
     border: none;
     outline: none;
     font-family: "Space Mono", monospace;
-    font-size: 15px;
+    font-size: 17px;
+    letter-spacing: 0.5px;
 }
-
-
 
 input[type=submit] {
     background-color: #0079FF;
@@ -230,6 +234,7 @@ input[type=submit] {
 
 ::placeholder {
     font-family: "Space Mono", monospace;
+    font-size: 17px;
 }
 
 input[type=submit]:hover {
@@ -244,6 +249,7 @@ input[type=submit]:hover {
     box-shadow:  5px 10px 20px  #eaeef9;
     display: flex;
     gap: 40px;
+    max-height: 419px;
 }
 
 .profile-img {
@@ -420,11 +426,3 @@ a {
     width: 100%;
     border-radius: 50%;
 }
-
-
-
-
-
-
-
-
